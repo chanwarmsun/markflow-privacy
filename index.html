@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 - MarkFlow 文档转换插件</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .lang-switch button {
+      padding: 6px 16px;
+      margin-left: 8px;
+      border: 1px solid #e5e5e5;
+      background: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .lang-switch button:hover {
+      background: #f5f5f5;
+    }
+    .lang-switch button.active {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+    h1 { color: #1a1a1a; margin-bottom: 10px; }
+    .subtitle { color: #666; margin-bottom: 30px; font-size: 14px; }
+    h2 { color: #2563eb; margin: 30px 0 15px; padding-bottom: 10px; border-bottom: 1px solid #e5e5e5; }
+    h3 { color: #1f2937; margin: 20px 0 10px; font-size: 16px; }
+    p { margin-bottom: 15px; }
+    ul { margin-bottom: 15px; padding-left: 25px; }
+    li { margin-bottom: 8px; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    .update-info { text-align: right; color: #999; font-size: 12px; margin-top: 40px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Language toggle */
+    .content-zh, .content-en {
+      display: none;
+    }
+    .content-zh.active, .content-en.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <button id="btn-zh" class="active">中文</button>
+      <button id="btn-en">English</button>
+    </div>
+
+    <!-- 中文版本 -->
+    <div class="content-zh active">
+      <h1>隐私政策</h1>
+      <p class="subtitle">MarkFlow - Doc to Markdown Converter</p>
+
+      <p>最后更新：2026年2月4日</p>
+
+      <h2>一、概述</h2>
+      <p>MarkFlow（"我们"、"本插件"）致力于保护您的隐私。本隐私政策说明了我们如何收集、使用、存储和保护您在使用本 Chrome 浏览器扩展时的个人信息。</p>
+
+      <h2>二、我们收集的信息</h2>
+
+      <h3>1. 文档内容</h3>
+      <ul>
+        <li><strong>处理内容：</strong>您上传的 PDF、Word、图片等文档内容，用于 OCR 文字识别和格式转换</li>
+        <li><strong>处理方式：</strong>文档内容仅在本地浏览器或发送至 OCR 服务器进行处理</li>
+        <li><strong>存储：</strong>我们不存储您上传的原始文档内容</li>
+      </ul>
+
+      <h3>2. 使用数据</h3>
+      <ul>
+        <li><strong>转换历史：</strong>最近 50 条转换记录（文件名、状态、时长），存储在本地 Chrome Storage</li>
+        <li><strong>配额信息：</strong>每日 OCR 使用次数、当前订阅计划</li>
+        <li><strong>设置偏好：</strong>OCR 提供商选择、主题、语言等配置</li>
+      </ul>
+
+      <h3>3. 支付信息（仅付费用户）</h3>
+      <ul>
+        <li><strong>支付方式：</strong>微信支付或支付宝</li>
+        <li><strong>处理流程：</strong>通过手动转账方式，支付凭证发送至我们的服务器进行审核</li>
+        <li><strong>存储：</strong>订单信息、支付状态、许可证密钥存储在我们的服务器</li>
+      </ul>
+
+      <h2>三、信息使用方式</h2>
+      <ul>
+        <li>提供文档转换服务（PDF/Word/图片 → Markdown）</li>
+        <li>管理您的每日配额和订阅状态</li>
+        <li>处理支付订单和订阅激活</li>
+        <li>改进服务质量和修复问题</li>
+        <li>发送重要通知（如订阅到期提醒）</li>
+      </ul>
+
+      <h2>四、第三方服务</h2>
+
+      <h3>1. OCR 识别服务</h3>
+      <p>您的文档图片可能发送至以下第三方 OCR 服务进行文字识别：</p>
+      <ul>
+        <li><strong>PaddleOCR 服务：</strong>自建 OCR 服务</li>
+        <li><strong>百度 OCR API：</strong>由百度智能云提供</li>
+      </ul>
+      <p>我们采取合理措施保护您的数据安全，但第三方服务的隐私政策亦适用。</p>
+
+      <h3>2. 支付处理</h3>
+      <p>支付通过微信/支付宝手动转账完成，我们不存储您的支付账户信息。</p>
+
+      <h2>五、数据存储与安全</h2>
+
+      <h3>1. 本地存储</h3>
+      <ul>
+        <li>转换历史、设置、配额信息存储在您的浏览器本地（Chrome Storage API）</li>
+        <li>您可以通过清除浏览器数据或卸载扩展来删除这些信息</li>
+      </ul>
+
+      <h3>2. 服务器存储</h3>
+      <ul>
+        <li>支付订单信息、订阅状态存储在我们的服务器</li>
+        <li>服务器位于中国境内，符合中国网络安全法律法规</li>
+      </ul>
+
+      <h3>3. 安全措施</h3>
+      <ul>
+        <li>HTTPS 加密传输</li>
+        <li>敏感信息（API Key）使用 AES-GCM 本地加密存储</li>
+        <li>定期安全审计和漏洞修复</li>
+      </ul>
+
+      <h2>六、数据共享</h2>
+      <p>我们<strong>不会出售</strong>您的个人信息。仅在以下情况下共享：</p>
+      <ul>
+        <li>经您明确同意</li>
+        <li>法律法规要求或政府机关依法调取</li>
+        <li>保护我们的合法权益</li>
+      </ul>
+
+      <h2>七、Cookie 政策</h2>
+      <p>本插件不使用 Cookie。所有数据通过 Chrome Storage API 本地存储。</p>
+
+      <h2>八、儿童隐私</h2>
+      <p>本插件面向所有年龄段用户。如果我们发现收集了未满 13 岁儿童的个人信息，将采取措施删除该信息。</p>
+
+      <h2>九、您的权利</h2>
+      <ul>
+        <li><strong>访问权：</strong>查看我们存储的您的信息</li>
+        <li><strong>删除权：</strong>要求删除您的账户和相关数据</li>
+        <li><strong>更正权：</strong>更正不准确的信息</li>
+        <li><strong>导出权：</strong>以可读格式导出您的数据</li>
+        <li><strong>反对权：</strong>反对特定的数据处理活动</li>
+      </ul>
+      <p>行使上述权利，请通过下方联系方式与我们联系。</p>
+
+      <h2>十、政策变更</h2>
+      <p>我们可能会不时更新本隐私政策。重大变更将通过插件内通知或邮件告知。继续使用本插件即表示您接受更新后的政策。</p>
+
+      <h2>十一、联系我们</h2>
+      <ul>
+        <li><strong>邮箱：</strong><a href="mailto:527154172@qq.com">527154172@qq.com</a></li>
+        <li><strong>网站：</strong><a href="https://www.warmsunai.cn" target="_blank">https://www.warmsunai.cn</a></li>
+      </ul>
+
+      <h2>十二、服务条款（摘要）</h2>
+      <ul>
+        <li>本插件按"现状"提供，不提供任何明示或暗示的保证</li>
+        <li>我们不保证 OCR 识别的 100% 准确性</li>
+        <li>付费订阅不提供退款，除非法律要求</li>
+        <li>用户不得将本插件用于非法用途</li>
+        <li>我们保留随时修改或终止服务的权利</li>
+      </ul>
+
+      <div class="update-info">
+        服务器：<a href="https://api.warmsunai.cn">https://api.warmsunai.cn</a><br>
+        最后更新：2026年2月4日
+      </div>
+    </div>
+
+    <!-- English Version -->
+    <div class="content-en">
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">MarkFlow - Doc to Markdown Converter</p>
+
+      <p>Last Updated: February 4, 2026</p>
+
+      <h2>1. Overview</h2>
+      <p>MarkFlow ("we", "this extension") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when using this Chrome browser extension.</p>
+
+      <h2>2. Information We Collect</h2>
+
+      <h3>1. Document Content</h3>
+      <ul>
+        <li><strong>Content Processed:</strong> PDF, Word, and image documents you upload for OCR text recognition and format conversion</li>
+        <li><strong>Processing Method:</strong> Document content is processed locally in your browser or sent to OCR servers</li>
+        <li><strong>Storage:</strong> We do not store your original uploaded document content</li>
+      </ul>
+
+      <h3>2. Usage Data</h3>
+      <ul>
+        <li><strong>Conversion History:</strong> Recent 50 conversion records (filename, status, duration), stored locally in Chrome Storage</li>
+        <li><strong>Quota Information:</strong> Daily OCR usage count, current subscription plan</li>
+        <li><strong>Settings Preferences:</strong> OCR provider selection, theme, language, and other configurations</li>
+      </ul>
+
+      <h3>3. Payment Information (Paid Users Only)</h3>
+      <ul>
+        <li><strong>Payment Methods:</strong> WeChat Pay or Alipay</li>
+        <li><strong>Processing:</strong> Through manual transfer, payment proof is sent to our server for verification</li>
+        <li><strong>Storage:</strong> Order information, payment status, and license keys stored on our server</li>
+      </ul>
+
+      <h2>3. How We Use Your Information</h2>
+      <ul>
+        <li>Provide document conversion services (PDF/Word/Images → Markdown)</li>
+        <li>Manage your daily quota and subscription status</li>
+        <li>Process payment orders and subscription activation</li>
+        <li>Improve service quality and fix issues</li>
+        <li>Send important notifications (e.g., subscription expiry reminders)</li>
+      </ul>
+
+      <h2>4. Third-Party Services</h2>
+
+      <h3>1. OCR Recognition Services</h3>
+      <p>Your document images may be sent to the following third-party OCR services for text recognition:</p>
+      <ul>
+        <li><strong>PaddleOCR Service:</strong> Self-hosted OCR service</li>
+        <li><strong>Baidu OCR API:</strong> Provided by Baidu Intelligent Cloud</li>
+      </ul>
+      <p>We take reasonable measures to protect your data security, but the privacy policies of third-party services also apply.</p>
+
+      <h3>2. Payment Processing</h3>
+      <p>Payments are completed via WeChat/Alipay manual transfer. We do not store your payment account information.</p>
+
+      <h2>5. Data Storage & Security</h2>
+
+      <h3>1. Local Storage</h3>
+      <ul>
+        <li>Conversion history, settings, and quota information are stored locally in your browser (Chrome Storage API)</li>
+        <li>You can delete this information by clearing browser data or uninstalling the extension</li>
+      </ul>
+
+      <h3>2. Server Storage</h3>
+      <ul>
+        <li>Payment order information and subscription status are stored on our server</li>
+        <li>Server is located within China and complies with Chinese network security laws and regulations</li>
+      </ul>
+
+      <h3>3. Security Measures</h3>
+      <ul>
+        <li>HTTPS encrypted transmission</li>
+        <li>Sensitive information (API Keys) stored locally using AES-GCM encryption</li>
+        <li>Regular security audits and vulnerability fixes</li>
+      </ul>
+
+      <h2>6. Data Sharing</h2>
+      <p>We <strong>will not sell</strong> your personal information. We only share it in the following cases:</p>
+      <ul>
+        <li>With your explicit consent</li>
+        <li>Required by laws and regulations or requested by government authorities</li>
+        <li>To protect our legitimate rights and interests</li>
+      </ul>
+
+      <h2>7. Cookie Policy</h2>
+      <p>This extension does not use cookies. All data is stored locally through Chrome Storage API.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>This extension is intended for users of all ages. If we discover that we have collected personal information of children under 13, we will take steps to delete that information.</p>
+
+      <h2>9. Your Rights</h2>
+      <ul>
+        <li><strong>Right to Access:</strong> View the information we store about you</li>
+        <li><strong>Right to Delete:</strong> Request deletion of your account and related data</li>
+        <li><strong>Right to Correct:</strong> Correct inaccurate information</li>
+        <li><strong>Right to Export:</strong> Export your data in a readable format</li>
+        <li><strong>Right to Object:</strong> Object to specific data processing activities</li>
+      </ul>
+      <p>To exercise the above rights, please contact us using the information below.</p>
+
+      <h2>10. Policy Changes</h2>
+      <p>We may update this Privacy Policy from time to time. Significant changes will be notified through in-app notifications or email. Continued use of this extension indicates your acceptance of the updated policy.</p>
+
+      <h2>11. Contact Us</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:527154172@qq.com">527154172@qq.com</a></li>
+        <li><strong>Website:</strong> <a href="https://www.warmsunai.cn" target="_blank">https://www.warmsunai.cn</a></li>
+      </ul>
+
+      <h2>12. Terms of Service (Summary)</h2>
+      <ul>
+        <li>This extension is provided "as is" without any express or implied warranties</li>
+        <li>We do not guarantee 100% OCR recognition accuracy</li>
+        <li>Paid subscriptions are non-refundable unless required by law</li>
+        <li>Users must not use this extension for illegal purposes</li>
+        <li>We reserve the right to modify or terminate the service at any time</li>
+      </ul>
+
+      <div class="update-info">
+        Server: <a href="https://api.warmsunai.cn">https://api.warmsunai.cn</a><br>
+        Last Updated: February 4, 2026
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 存储键（兼容扩展环境）
+    const STORAGE_KEY = 'markflow-privacy-lang';
+
+    // 存储语言偏好
+    function saveLanguage(lang) {
+      try {
+        localStorage.setItem(STORAGE_KEY, lang);
+      } catch (e) {
+        // 扩展环境可能不支持 localStorage，使用 chrome.storage
+        if (typeof chrome !== 'undefined' && chrome.storage) {
+          chrome.storage.local.set({ [STORAGE_KEY]: lang });
+        }
+      }
+    }
+
+    // 获取保存的语言偏好
+    function getSavedLanguage(callback) {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        callback(saved || null);
+      } catch (e) {
+        // 扩展环境使用 chrome.storage
+        if (typeof chrome !== 'undefined' && chrome.storage) {
+          chrome.storage.local.get([STORAGE_KEY], function(result) {
+            callback(result[STORAGE_KEY] || null);
+          });
+        } else {
+          callback(null);
+        }
+      }
+    }
+
+    // Detect browser language
+    function detectLanguage() {
+      const lang = navigator.language || navigator.userLanguage;
+      if (lang && lang.toLowerCase().startsWith('zh')) {
+        return 'zh';
+      }
+      return 'en';
+    }
+
+    // Set language
+    function setLanguage(lang) {
+      const contentZh = document.querySelector('.content-zh');
+      const contentEn = document.querySelector('.content-en');
+      const btnZh = document.getElementById('btn-zh');
+      const btnEn = document.getElementById('btn-en');
+
+      if (lang === 'zh') {
+        contentZh.classList.add('active');
+        contentEn.classList.remove('active');
+        btnZh.classList.add('active');
+        btnEn.classList.remove('active');
+        document.documentElement.lang = 'zh-CN';
+      } else {
+        contentEn.classList.add('active');
+        contentZh.classList.remove('active');
+        btnEn.classList.add('active');
+        btnZh.classList.remove('active');
+        document.documentElement.lang = 'en';
+      }
+
+      // Save preference
+      saveLanguage(lang);
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // 绑定按钮事件
+      const btnZh = document.getElementById('btn-zh');
+      const btnEn = document.getElementById('btn-en');
+
+      if (btnZh) {
+        btnZh.addEventListener('click', function() {
+          setLanguage('zh');
+        });
+      }
+
+      if (btnEn) {
+        btnEn.addEventListener('click', function() {
+          setLanguage('en');
+        });
+      }
+
+      // 加载保存的语言偏好
+      getSavedLanguage(function(savedLang) {
+        if (savedLang) {
+          setLanguage(savedLang);
+        } else {
+          setLanguage(detectLanguage());
+        }
+      });
+    });
+  </script>
+</body>
+</html>
